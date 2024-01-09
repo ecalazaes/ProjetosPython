@@ -1,10 +1,10 @@
-# Passo a passo do projeto
+# Passo a passo do projeto  
 import pyautogui as pg
 import time
 import pandas as pd
 
 # Passo 1 - Entrar no sistema da empresa
-    # https://dlp.hashtagtreinamentos.com/python/intensivao/login
+    # https://dlp.hashtagtreinamentos.com/python/intensivao/loginhttps://dlp.hashtagtreinamentos.com/python/intensivao/login
     
 # Bibliotecas em Python
 # PyAutoGui
@@ -15,7 +15,7 @@ import pandas as pd
 # atalho -> pg.hotkey
 # scroll -> (rolar) -> pg.scroll
 
-pg.PAUSE = 0.5
+pg.PAUSE = 0.6
 
 pg.press('win')
 pg.write('opera')
@@ -57,10 +57,13 @@ for linha in tabela.index:
     pg.write(str(tabela.loc[linha, 'custo']))
     pg.press('tab')
     # Obs
-    pg.write(str(tabela.loc[linha, 'obs']))
+    obs = tabela.loc[linha, 'obs']
+    if not pd.isna(obs):
+        pg.write(obs)
+    
     pg.press('tab')
-
     pg.press('enter')
+    
     pg.scroll(5000)
 
 
