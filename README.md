@@ -1,3 +1,5 @@
+# Projetos Python Suíte
+
 Este repositório contém uma coleção de projetos desenvolvidos com Python, abrangendo diferentes áreas como análise de dados, automação, desenvolvimento web e inteligência artificial. Cada projeto utiliza bibliotecas poderosas para fornecer soluções práticas e eficazes.
 
 ## Projetos
