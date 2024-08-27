@@ -24,7 +24,7 @@ Este repositório contém uma coleção de projetos desenvolvidos com Python, ab
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/python-projects-suite.git
+   git clone https://github.com/ecalazaes/ProjetosPython.git
 
 2. Acesse o diretório do projeto desejado:
     ```bash
